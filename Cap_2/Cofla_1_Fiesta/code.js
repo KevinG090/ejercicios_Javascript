@@ -1,3 +1,15 @@
+/* 
+	Ejercicio de "Soy Dalto" cap 2
+
+	Un joven muy afortunado logro ganar el primer premio de la loteria... exacto,
+	estamos hablando del pobre al que cofla le dio una mano, este pobre decide hacer
+	una fiesta para festejar que salio de la pobreza con este millonario compro una 
+	maquina que deja solamente a los mayores de edad, entre otras cosas... 
+
+	- Deja pasar solo a los mayores de edad
+	- La primer persona que entre despues de las 2 am, no paga 
+*/
+
 let free_2_am = false;
 var cost = 2000;
 
@@ -31,3 +43,4 @@ verificacionEntrada("kevin",1);
 verificacionEntrada("david",2);
 verificacionEntrada("guevara",3);
 verificacionEntrada("manosalva",6);
+
