@@ -10,17 +10,45 @@
 */
 
 const sumar = (num1,num2)=>{
-	return parseInt(num1) + parseInt(num1);
+	return parseFloat(num1) + parseFloat(num2);
 }
 const restar = (num1,num2)=>{
-	return parseInt(num1) - parseInt(num1);
+	return parseFloat(num1) - parseFloat(num2);
 }
 const multiplicar = (num1,num2)=>{
-	return parseInt(num1) * parseInt(num1);
+	return parseFloat(num1) * parseFloat(num2);
 }
 const dividir = (num1,num2)=>{
-	return parseInt(num1) / parseInt(num1);
+	return parseFloat(num1) / parseFloat(num2);
 }
 
-alert("Que operacion deseas realizar ? ");
-op = prompt(" S = sumar, R = restar, M = multiplicar, D = dividir");
+alert("Que operacion deseas realizar. ? ");
+
+i = 0;
+while ( i < 1 ){
+	let op = prompt(" S = sumar, R = restar, M = multiplicar, D = dividir");
+
+	let num1 = prompt("Escriba un numero ");
+	let num2 = prompt("Escriba otro numero ");
+	
+	op = op.toUpperCase();
+	if (op == "S"){
+		// i++;
+		alert("el resultado de la suma es : " + sumar(num1,num2))	
+	}
+	else if (op == "R"){
+		// i++;
+		alert("el resultado de la resta es : " + restar(num1,num2))
+	}
+	else if (op == "M"){
+		// i++;
+		alert("el resultado de la multiplicacion es : " + multiplicar(num1,num2))
+	}
+	else if (op == "D"){
+		// i++;
+		alert("el resultado de la division es : " + dividir(num1,num2))
+	} 
+	else  {
+		alert("no se reconoce la letra de la operacion, vuelva a intentar");
+	}
+}
