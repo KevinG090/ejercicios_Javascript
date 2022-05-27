@@ -1,5 +1,4 @@
 
-
 class Animal {
 	constructor(especie,edad,color){ // el objeto tiene esos parametros 
 		this.especie = especie;
