@@ -4,6 +4,7 @@ let nombres1 = ["Kevin","jorge","Maria"];
 		</code>`);
 	// se saca el ultimo valor de un array ubicandolo en una nueva variable 
 	pop = nombres1.pop(); 
+	
 	document.write("<b>pop : " + pop + "</b><b style='color:red'> (Ultimo Elemento Eliminado)</b><br>");
 	document.write(`<code> <b>
 		let nombres1 = [${nombres1}]; </b> <br><br>
@@ -14,7 +15,8 @@ let nombres2 = ["Kevin","jorge","Maria"];
 		let nombres2 = [${nombres2}]; </b><br>
 		</code>`);
 	// Agrega (x) valores al array devolviendonos la cantidad de elementos en el array y modificando el mismo
-	push = nombres2.push("David","Pedro"); 
+	push = nombres2.push("David","Pedro");
+
 	document.write("<b>push  : " + push + "</b><b style='color:red'> Cantidad de Elementos (Agrego 2 mas al final)</b><br>");
 	document.write(`<code> <b>
 		let nombres2 = [${nombres2}]; </b> <br><br>
@@ -85,7 +87,7 @@ let letras2 = ["a","b","d","e","f","g"];
 		</code>`);
 	
 	splice = letras2.splice(0,5); 
-	document.write("<b>splice  : " + splice + "</b><b style='color:red'> Se elimina apartir de la posicion (0) y se eliminan (5) elementos </b><br>");
+	document.write("<b>splice  : " + splice + "</b><b style='color:red'> Se eliminan (5) elementos apartir de la posicion (0) </b><br>");
 	document.write(`<code> <b>
 		let letras2 = [${letras2}]; </b> <br>
 		</code>`);
