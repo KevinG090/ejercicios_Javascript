@@ -1,3 +1,8 @@
+/*
+  -Ingresar el monto y mostrar el mas caro que pueden comprar
+  -Indicar el restante
+*/
+
 let dineroCofla = prompt ("cuanto dinero Cofla tiene?");
 // let dineroRoberto = prompt ("cuanto dinero Roberto tiene? ");
 // let dineroPedro = prompt ("cuanto dinero Pedro tiene? ")

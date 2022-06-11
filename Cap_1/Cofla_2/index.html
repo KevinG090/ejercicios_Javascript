@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<title></title>
+</head>
+<body>
+	<main>
+		<h1>Bienvenido a la loteria de cofla</h1>
+		<div class="contenedor">
+			<div class="item boleto-precio">
+				<h2>Precio Del Boleto</h2>
+				<img class="boleto-img" src="boleto.png">
+				<h3>Loteria : Aleatrum </h3>
+				<p>Precio : 2000 </p>
+			</div>
+			<div class="item espacio-formato">
+				<h2>Cuantos boletos compraras?</h2>
+				<form class="formato">
+					<label class="presupuesto-label" for="number">Cuanto dinero tienes?</label>
+					<input 
+						type="number" 
+						name="data"
+						id="number"
+						min="100"
+						value="" 
+						class="presupuesto-input" 
+						required 
+					>
+					<div class="inputs">
+						<input 
+						type="button" 
+						id="submit"
+						value="Comprar"
+						class="boton-comprar" 
+					>
+					<input 
+						type="submit" 
+						id="submit"
+						value="Reset"
+						class="boton-comprar" 
+					>
+					</div>
+					
+				</form>
+				<div class="retorno">
+					<textarea
+						type="text" 
+						name="data" 
+						id="text"
+						value=""
+						rows="4"
+						class="respuesta-input" 	 
+					>
+					</textarea> 
+				</div>
+			</div>
+		</div>
+	</main>
+	<script src="code.js"></script>
+</body>
+</html>
