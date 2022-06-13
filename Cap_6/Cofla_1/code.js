@@ -71,5 +71,26 @@ p1 += `<p>el tipo de dato es <b>${typeGET}</b> porque se elimina<br></p>`;
 input3.insertAdjacentHTML('afterend',p1);
 // a removeAttribute se le indica el dato que queremos eliminar (eliminar el type)
 
+/* ACCESO A ATRIBUTOS DE INPUTS */
 
+const input4 = document.querySelector(".clase-input4")
 
+p2 = `<p><b style='color:red'>input4.className : </b> ${input4.className} </p>`
+p2 += `<p><b style='color:red'>input4.value : </b> ${input4.value} </p>`
+p2 += `<p><b style='color:red'>input4.type : </b> ${input4.type} </p>` // mirar descripcion
+input4.insertAdjacentHTML('afterend',p2);
+// se le puede cambiar el valor de un atributo directamente sin el getAttribute y setAttribute
+// ej : (input4.type)  retorna text pero si le indicamos (input4.type = 'color') el valor de type lo cambiara 
+// asi funciona con la gran mayoria de accesos directos
+
+const input5 = document.querySelector(".clase-input5")
+p3 = `<p><b style='color:red'>input5.accept : </b> ${input5.accept = "image/png"} </p>` // type file
+input5.insertAdjacentHTML('afterend',p3);
+// el (input5.accept) solo funciona en inputs (type="file")
+// (input5.accept = "image/png") le indica el input que solo acepte las imagenes png lo que reduce las opciones
+
+const input6 = document.querySelector(".clase-input6")
+p4 = `<p><b style='color:red'>input6.minLength : </b> ${input6.minLength = 4} </p>` 
+p4 += `<p><b style='color:red'>input6.placeholder : </b> ${input6.placeholder = "escribe min 4 "} </p>` // type file
+input6.insertAdjacentHTML('afterend',p4);
+// (input6.minLength = 4) le indica el input que accepte min x caracteres (en este caso el min que se debe escribir son 4)
