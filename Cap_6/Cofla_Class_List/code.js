@@ -35,3 +35,22 @@ p += `<p>clase en la ubicacion ( 0 ) es : <b>${parrafo.classList.item(0)}</b><br
 p += `<p>clase en la ubicacion ( 1 ) es : <b>${parrafo.classList.item(1)}</b><br></p>`
 p += `<p>clase en la ubicacion ( 2 ) es : <b>${parrafo.classList.item(2)}</b><br><b style='color:red'>retorna null porque no tiene mas clases </b><br></p>`
 div.insertAdjacentHTML(`beforeend`,p)
+
+p = `<p><br><b>Tambien podemos validar si una clase esta o no <br>
+y de acuerdo con ello añadirla o no</b><br>
+si la la clase X esta, entonces eliminala<br>
+pero si la clase X no esta, entonces agregala<br>
+<b style='color:red'>( parrafo.classList.toggle("nueva-clase") ) </b><br></p>`
+parrafo.classList.toggle("nueva-clase");
+p += `<p>Se agrega una nueva clase :  <b>${parrafo.className}</b><br></p>`
+div.insertAdjacentHTML(`beforeend`,p)
+
+parrafo.classList.toggle("nueva-clase");
+p = `<b style='color:red'>( parrafo.classList.toggle("nueva-clase") ) </b><br></p>`
+p += `<p>Se elimina clase :  <b>${parrafo.className}</b><br><br></p>`
+div.insertAdjacentHTML(`beforeend`,p)
+
+// si le agregamos (true) la clase nombrada solamente va a ser añadida
+// sin embargo el caso contrario (false), la clase siempre sera eliminada
+// ej: parrafo.classList.toggle("nueva-clase",true);
+
