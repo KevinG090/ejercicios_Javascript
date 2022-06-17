@@ -56,18 +56,6 @@ item2.appendChild(lista)
 // consume recursos 
 
 
-valor = `<p><br><b>lista.firstChild y lista.lastChild </b> <br><b style='color:red'>Nota: Mirar Consola</b></p>`
-valor += `<p style='color:red'>muestran el <b>PRIMER Y ULTIMO ELEMENTO</b> de un nodo/elemento padre<br></p>`
-lista.insertAdjacentHTML(`afterend`,valor)
-console.log(`lista.firstChild :`)
-console.log(lista.firstChild)
-console.log("")
-
-console.log(`lista.lastChild :`)
-console.log(lista.lastChild)
-console.log("")
-// (firstChild y lista.lastChild) puede contar los espacios entre los elementos la cual varia el item/ubicacion de cada uno
-// por ello se recomienda (firstElementChild y lastElementChild) que toma los elementos directamente
 
 valor = `<p><br><b>lista.childNodes </b> <br><b style='color:red'>Nota: Mirar Consola</b></p>`
 valor += `<p style='color:red'>muestra todos los hijos <b>INCLUYENDO ESPACIOS</b> de un nodo/elemento padre<br></p>`
@@ -83,13 +71,60 @@ console.log(`lista.children :`)
 console.log(lista.children)
 console.log("")
 
+valor = `<p><br><b>lista.firstChild y lista.lastChild </b> <br><b style='color:red'>Nota: Mirar Consola</b></p>`
+valor += `<p style='color:red'>muestran el <b>PRIMER Y ULTIMO ELEMENTO</b> de un nodo/elemento padre<br></p>`
+lista.insertAdjacentHTML(`afterend`,valor)
+console.log(`lista.firstChild :`)
+console.log(lista.firstChild)
+console.log("")
+
+console.log(`lista.lastChild :`)
+console.log(lista.lastChild)
+console.log("")
+// (firstChild y lista.lastChild) puede contar los espacios entre los elementos la cual varia el item/ubicacion de cada uno
+// por ello se recomienda (firstElementChild y lastElementChild) que toma los elementos directamente
 valor = `<p><b>( createElement y createDocumentFragment con un for )</b><br></p>`;
 lista.insertAdjacentHTML("afterend",valor);// se agrega el elemento (valor) despues del elemento (parrafo2)
 
 
+// DIV 3
+const item3 = document.querySelector(".item3")
+const parrafo_antiguo = document.querySelector(".texto");
 
+const parrafo_nuevo = document.createElement("P");
+parrafo_nuevo.innerHTML="Este es un nuevo parrafo";
+item3.replaceChild(parrafo_nuevo,parrafo_antiguo);
 
+valor = `<p>se remplazo el elemento por otro con :<br> <b style='color:red'>replaceChild</b><b> ( elementoNuevo , elementoAntiguo )</b><br></p>`;
+item3.insertAdjacentHTML("beforeend",valor);//
 
+valor = `<p>se puede eliminar un elemento hijo con :<br> <b style='color:red'>removeChild</b><b> ( elementoAEliminar )</b><br><br></p>`;
+item3.insertAdjacentHTML("beforeend",valor);//
 
+// ----------
 
+const h2 = document.createElement("H2");
+h2.innerHTML = "Propiedades Padres";
+item3.appendChild(h2)
 
+valor = `<p>Saber el padre de un elemento :<br> <b style='color:red'>parentElement o parentNode</b><br></p>`;
+valor += `<p><b style='color:red'>Nota: Mirar Consola</b><br></p>`;
+console.log("h2.parentElement :")
+console.log(h2.parentElement);
+console.log("")
+item3.insertAdjacentHTML("beforeend",valor);//
+
+// DIV 4
+
+const item4 = document.querySelector(".item4")
+const texto2 = document.querySelector(".texto2")// elemento "hermano"
+
+console.log(`texto2.nextElementSibling :`)
+console.log(texto2.nextElementSibling)// el siguiente elemento del texto2 la cual es un hermano
+console.log(`texto2.previousElementSibling :`)
+console.log(texto2.previousElementSibling)// el anterior elemento del texto2 la cual es un hermano
+console.log("")
+
+valor = `<p><br><b>nextElementSibling y previousElementSibling </b> <br></p>`
+valor += `<p style='color:red'>muestran el <b>SIGUIENTE Y ANTERIOR ELEMENTO ( HERMANO )</b><br>Nota: Mirar Consola<br></p>`
+item4.insertAdjacentHTML('beforeend',valor)
