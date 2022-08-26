@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="styles.css">
+	<title>Formulario</title>
+</head>
+<body>
+	<form>
+		<h1>Formulario</h1>
+		<div class="espacio-nombre">
+			<label for="name">Nombre Completo :</label>
+			<input id="name"
+			type="text"
+			minlength="10"
+			maxlength="40"
+			placeholder="Pepito Alfonzo Perez Gonzalez"
+			required>
+		</div>
+		<div class="espacio-email">
+			<label for="email">email :</label>
+			<input id="email"
+			type="email"
+			minlength="13"
+			maxlength="40"
+			placeholder="example@gmail.com"
+			required>
+		</div>
+		<div class="espacio-materia">
+			<label for="materia">materia :</label>
+			<input id="materia"
+			type="text"
+			minlength="5"
+			maxlength="40"
+			placeholder="M. perdida"
+			required>
+		</div>
+		<input id="btn-enviar"
+		type="submit" 
+		value="Solicitar Mesa">
+	</form>
+	<div class="pop" id="correcto">
+		<h2>Solicitud enviada</h2>
+		<img src="images/aceptar.png" alt="correcto">
+	</div>
+	<div class="pop" id="error">
+		<h2>Error al enviar</h2>
+		<img src="images/cancelar.png" alt="error">
+		<p id="descripcion"></p>
+	</div>
+	<script src="code.js"></script>
+</body>
+</html>
