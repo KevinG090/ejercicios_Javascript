@@ -1,0 +1,35 @@
+:root {
+    --main-color:rgb(204, 204, 204);
+    --gray-color:rgb(239, 239, 239);
+    --white-color:rgb(255, 255, 255);
+    --blue-color:#316bd7;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: var(--main-color);
+    font-family: sans-serif;
+}
+.contenedor-materias {
+    margin: 20px auto;
+    width: 90%;
+    background-color: var(--gray-color);
+    padding: 2px;
+}
+.materia {
+    background:var(--white-color) ;
+    display: flex;
+}
+.materia div {
+padding: 20px;
+}
+.materia .nombre {
+    flex-grow: 1;
+}
+.materia .nota {
+    flex-basis: 20px;
+    background-color: #ddd;
+    font-weight: 700;
+}
