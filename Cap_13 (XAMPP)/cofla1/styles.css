@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+#getInfo{
+    margin: 40px auto;
+    padding: 10px;
+    color: #fff;
+    background: rgb(94, 154, 233);
+    border: none;
+    border-radius: 15px;
+    font-weight: 700;
+    flex-wrap: wrap;
+}
+#resultado{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.aprobado , .desaprobado{
+    width: 90%;
+    margin: 10px auto;
+}
