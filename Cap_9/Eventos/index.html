@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<h4>link para ver todos los eventos : <a href="https://www.w3schools.com/jsref/obj_events.asp">click</a></h4>
+	<table style="width:70%;margin:auto">
+		<thead>
+			<tr><th colspan="3">EVENTOS</th></tr>
+			<tr>
+				<th>que son los eventos?</th>
+				<td colspan="2" style="padding:2rem;">Cualquier cambio/accion de una pagina, desde que carga, aparecen las imagenes, se hace scroll, se mueve el mouse, damos click y demas ....<br> esto quiere decir que al asignarle codigo a un elemento que esta participando a un evento y asi hacer/cambiar/ejecutar algo</td>
+			</tr>
+			<tr>
+				<th>como aplicar/realizar un evento?</th>
+				<td colspan="2" style="padding:2rem;"><b>SE PUEDE HACER DE 4 FORMAS</b><br><br>
+				<b>1.</b> Directamente en el html<br>
+				<code>< button <b>onclick="alert(`esto es un evento`)"</b> > Apretame </ button ></code><br><br>
+				<b>2.</b> LLamando a una funcion en el html para que en el archivo js se ejecute<br>
+				<code>< button <b>onclick="funcionClick"</b> > Apretame </ button ></code><br><br>
+				<b>3.</b> En el html se crea la clase para que en js se agregue el evento<br>
+				<b>HTML</b><br>
+				<code>< button <b>class="boton"</b> > Apretame </ button ></code><br>
+				<b>JavaScript</b><br>
+				<code>boton1= document.querySelector(".boton")<br>
+				boton1.<b>addEventListener("click",saludo);</b><br>
+				function saludo (){alert("mensaje");}</code><br><br>
+				<b>4.</b> En el html se crea la clase para que en js se agregue el evento<br>
+				<b>HTML</b><br>
+				<code>< button <b>class="boton"</b> > Apretame </ button ></code><br>
+				<b>JavaScript</b><br>
+				<code>boton1= document.querySelector(".boton")<br>
+				boton1.<b>addEventListener("click",()=></b>{<br>
+				alert("mensaje");}</code><br><br>
+
+			</tr>
+			<tr>
+				<th>Titulo</th>
+				<th>Accion</th>
+				<th>Ejemplo</th>
+				<th>Codigo</th>
+			</tr>
+		</thead>
+		<tbody style="text-align:center ;">
+			<tr>
+				<td><code>onclick=""</code></td>
+				<td>al dar un click al elemento asignado se ejecuta algo</td>
+				<td><button class="boton" onclick="alert(`cuando hiciste click, el evento creo una alerta`)">Apretame</button></td>
+			</tr>
+			<tr>
+				<td>Objeto del Evento</td>
+				<td>al dar click al elemento asignado se ejecuta algo</td>
+				<td><button class="boton item1" >Mirar Consola</button></td>
+				<td><code>button.addEventListener("click",(e)=>{<br>
+				console.log(e.target)});</code></td>
+			</tr>
+			<tr>
+				<td>click y sblclick</td>
+				<td>al dar click o dos click al elemento asignado se ejecuta algo</td>
+				<td><button class="boton item2" >1 click</button>
+					<button class="boton item3" >2 click</button></td>
+				<td style="padding: 2rem;"><code>button.addEventListener("<b>click</b>",(e)=>{<br>
+				alert("diste un click")});<br>
+				--------------------<br>
+				button.addEventListener("<b>dblclick</b>",(e)=>{<br>
+				alert("diste dos click")});
+				</code></td>
+			</tr>
+			<tr>
+				<td>mouseover</td>
+				<td>cuando el puntero se mueve sobre un elemento o sobre uno de los hijos del elemento</td>
+				<td><div class="div1" style="background: red;"><div><button>hola</button></div></div></td>
+				<td><code>div1.addEventListener("mouseover",()=>{<br>
+					alert("mensaje")});</code></td>
+			</tr>
+			<tr>
+				<td>mouseout</td>
+				<td>cuando el puntero se mueve fuera un elemento o de los hijos del elemento</td>
+				<td><div class="div2" style="background:blue;"><div><button>hola</button></div></div></td>
+				<td style="padding: 1rem;"><code>div1.addEventListener("mouseout",()=>{<br>
+					alert("mensaje")});</code></td>
+			</tr>
+			<tr>
+				<td>contextmenu</td>
+				<td>cuando se le da click <b>DERECHO</b> ejecuta algo</td>
+				<td><button class="boton item4">click derecho</button></td>
+				<td style="padding: 1rem;"><code>div1.addEventListener("contextmenu,()=>{<br>
+					alert("mensaje")});</code></td>
+			</tr>
+			<tr>
+				<td>mousemove</td>
+				<td>cuando el mouse se  <b>MUEVE</b></td>
+				<td><div class="div3" style="background: red;"><h2>Al mover se ejecuta el alert</h2></div></td>
+				<td style="padding: 1rem;"><code>div1.addEventListener("contextmenu,()=>{<br>
+					alert("mensaje")});</code></td>
+			</tr>
+		</tbody>
+	</table>
+	<script src="code.js"></script>
+
+</body>
+</html>

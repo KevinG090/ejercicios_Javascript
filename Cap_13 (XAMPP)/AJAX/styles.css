@@ -1,0 +1,11 @@
+:root {
+    --main-color:rgb(233, 233, 233);
+    --gray-color:#ccc;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: var(--main-color);
+}

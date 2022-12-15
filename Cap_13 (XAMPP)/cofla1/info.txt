@@ -1,0 +1,4 @@
+{
+    "aprobados":100,
+    "desaprobados":20
+}

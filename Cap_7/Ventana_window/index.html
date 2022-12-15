@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Window</title>
+</head>
+<body>
+	<h1>Ventana Window</h1>
+	<table style="display:block;width:70%;margin:auto;">
+		<thead>
+			<tr><th colspan="3">Window</th></tr>
+			<tr>
+				<th>Titulo</th>
+				<th>Accion</th>
+				<th>Ejemplo</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td><code>window.open("url")</code></td>
+				<td>Al ejecutarse abre una ventana con el link indicado</td>
+				<td><button class="boton item1">Abrir Youtube</button></td>
+			</tr>
+			<tr>
+				<td><code>window.close()</code></td>
+				<td>Al ejecutarse cierra la ventana<b> ACTUAL </b> o a la ventana que se le indique en consola nota:la palabra window debe ser remplazada por el nombre de la ventana que se abrio</td>
+				<td><button class="boton item2">Cerrar Actual</button></td>
+			</tr>
+			<tr>
+				<td><code>window.closed</code></td>
+				<td>Indica si la ventana esta cerrada o no (booleano) nota:la palabra window debe ser remplazada por el nombre de la ventana que se abrio</td>
+				<td><button class="boton item3">esta cerrada?</button></td>
+			</tr>
+			<tr>
+				<td><code>window.stop()</code></td>
+				<td>Al ejecutarse detiene la carga de una ventana actual</td>
+				<td>Si se abre youtube y antes que termine la carga escribimos window.stop() en la consola, esta ventana dejara de cargarse</td>
+			</tr>
+			<tr>
+				<td><code>window.alert() o alert()</code></td>
+				<td>Al ejecutarse abre una alerta</td>
+				<td><button class="boton item4">alert</button></td>
+			</tr>
+			<tr>
+				<td><code>window.print() o print()</code></td>
+				<td>Al ejecutarse nos permite imprimir la pestaña</td>
+				<td><button class="boton item5">imprimir</button></td>
+			</tr>
+			<tr>
+				<td><code>window.prompt() o prompt()</code></td>
+				<td>Al ejecutarse nos solicita un dato retornando un string</td>
+				<td><button class="boton item6">prompt</button></td>
+			</tr>
+			<tr>
+				<td><code>window.confirm() o confirm()</code></td>
+				<td>Al ejecutarse nos solicita confirmar algo retornando un booleano</td>
+				<td><button class="boton item7">confirm</button></td>
+			</tr>
+
+			<!-- Screen -->
+
+			<tr><th colspan="3">Screen</th></tr>
+			<tr>
+				<td><code>window.screen()</code></td>
+				<td>Al ejecutarse podemos solicitar datos de la pantalla</td>
+				<td><button class="boton item8">Mirar consola</button></td>
+			</tr>
+			<tr>
+				<td><code>window.scroll(x,y)</code></td>
+				<td>Nos dirije a una posicion al indicarle X y Y</td>
+				<td><button class="boton item9"> (0,70)</button></td>
+			</tr>
+			<tr>
+				<td><code>window.scrollX() y window.scrollY()</code></td>
+				<td>Al ejecutarse nos retorna la distancia que recorrimos con el scroll</td>
+				<td><button class="boton item10">Mirar consola</button></td>
+			</tr>
+			<tr><th colspan="3">Location</th></tr>
+			<tr>
+				<td><code>window.location.href</code></td>
+				<td>Al ejecutarse nos retorna la ubicacion/direccion del archivo actual</td>
+				<td><button class="boton item11">Mirar consola</button></td>
+			</tr>
+			<tr>
+				<td><code>window.location.hostname</code></td>
+				<td>Al ejecutarse nos retorna el dominio de la ventana actual</td>
+				<td><button class="boton item12">Mirar consola</button></td>
+			</tr>
+			<tr>
+				<td><code>window.location.hostname</code></td>
+				<td>Al ejecutarse nos retorna la ubicacion del dominio de la ventana actual</td>
+				<td><button class="boton item13">Mirar consola</button></td>
+			</tr>
+		</tbody>
+	</table>
+	<script src="code.js"></script>
+</body>
+</html>
